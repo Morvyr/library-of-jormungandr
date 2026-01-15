@@ -41,15 +41,17 @@ class BaseTool(ABC):
         logger = logging.getLogger(self.name)
         logger.setLevel(logging.INFO)
 
-        # Console handler
-        handler = logging.StreamHandler(sys.stdout)
-        handler.setLevel(logging.INFO)
+        #Only add handler if this logger doesn't have any yet
+        if not logger.handlers:
+            # Console handler
+            handler = logging.StreamHandler(sys.stdout)
+            handler.setLevel(logging.INFO)
 
-        # Format: [TOOL_NAME] MESSAGE
-        formatter = logging.Formatter(f'[{self.name}] %(message)s')
-        handler.setFormatter(formatter)
+            # Format: [TOOL_NAME] MESSAGE
+            formatter = logging.Formatter(f'[{self.name}] %(message)s')
+            handler.setFormatter(formatter)
 
-        logger.addHandler(handler)
+            logger.addHandler(handler)
         return logger
     
     @abstractmethod

@@ -1,0 +1,12 @@
+Order_ID,Customer_Name,Product,Quantity,Price,Order_Date,Status,Email
+1001,john smith,Laptop,1,899.99,2024-01-15,Completed,john@email.com
+1002,SARAH JONES,Mouse,2,25.50,01/16/2024,completed,SARAH@EMAIL.COM
+1003,Mike Wilson,Keyboard,1,79.99,2024-01-17,Pending,mike@email.com
+1004,john smith,Monitor,1,299.99,2024/01/18,Completed,john@email.com
+1005,Emily Brown,Laptop,1,899.99,2024-01-19,shipped,emily@email.com
+1006,SARAH JONES,Mouse,3,25.50,01/20/2024,Completed,SARAH@EMAIL.COM
+1007,David Lee,,1,149.99,2024-01-21,Completed,david@email.com
+1008,john smith,Laptop,1,899.99,2024-01-15,Completed,john@email.com
+1009,Anna White,Webcam,2,,01/23/2024,pending,anna@email.com
+1010,Mike Wilson,Keyboard,1,79.99,2024-01-17,Cancelled,
+1002,SARAH JONES,Mouse,2,25.50,01/16/2024,completed,SARAH@EMAIL.COM

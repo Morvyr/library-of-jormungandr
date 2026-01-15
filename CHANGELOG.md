@@ -9,9 +9,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### In Progress
-- Tool #3: REST API Client
+- **Tool 1: CSV Data Cleaner** After days of debugging, the first production tool is still not ready for deployment. Once work can resume, The core tool csv_repair_tool will be intergrated and further imporvements can commence, until production is acheived.
 
----
+## [0.005] - 2026-01-15
+- **Training Docs and Thread Summaries** - In the /docs folder, added two new folders. in /Thread_Summaries, we added summaries for our Claude training threads to show transparent growth of this porject. In Training_Docs, we have begun the process of creating training documentation for each function in each tool written, for future teaching and reference.
+- **New Core tools**
+  -`csv_repair_tool.py` - Detects and repairs structural issues in CSV files before processing. This tool identifes field count mismatches and provides interactive repair through user input.
+  -`User_input.py` - Functions for human-in-the-loop workflows when automated repair fails or user guidance is needed.
+- **CSV Data Cleaner issues** - after testing CSVCleaner.py, found issues with pandas not able to decipher the difference between standard commas and sperator commas. Spent multiple days duebugging first in VS Code, then a Jupyter notebook until deciding to write two new core tools.
 
 ## [0.004] - 2026-01-10
 

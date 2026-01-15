@@ -185,6 +185,6 @@ def bytes_to_human_readable(size_bytes: int) -> str:
 
     while size >= 1024.0 and unit_index < len(units) - 1:
         size /= 1024.0
-        unit_index =+ 1
+        unit_index += 1
 
     return f"{size:.2f} {units[unit_index]}"
